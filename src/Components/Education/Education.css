@@ -1,0 +1,89 @@
+.education{
+    display: flex;
+    height: 90vh;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
+
+}
+.awesome{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.awesome>:nth-child(1){
+    color:rgb(65, 63, 59);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.awesome>:nth-child(2){
+    color:rgb(83, 83, 83);
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 1rem;
+    font-style: italic;
+}
+.s-button{
+    width: 8rem;
+    height: 3.3rem;
+    margin-top: 1.5rem;
+}
+.cards{
+    position: relative;
+}
+.cards>*{
+    position: absolute;
+}
+/* blur-part */
+.s-blur1{
+    top:12rem;
+    left: -18rem;
+}
+.s-blur2{
+    top:6rem;
+   left: 9rem;
+}
+@media screen and (min-width:0px)
+and (max-width:1254px){
+    .education{
+        margin-top: -10rem;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .cards{
+       left: 1rem;
+        top:3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 19rem;
+        transform: scale(0.65);
+
+    }
+    .cards>*{
+        position: static;
+    }
+}
+@media screen 
+and (max-width:764px){
+    .education{
+        margin-top: -10rem;
+        
+        
+    }
+    .cards{
+       left: 3rem;
+        top: -14rem;
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 19rem;
+        transform: scale(0.6);
+        margin-bottom: 9rem;
+        margin-top: 4rem;
+        
+
+    }
+    .cards>*{
+        position: static;
+    }
+}
